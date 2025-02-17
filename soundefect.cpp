@@ -7,6 +7,7 @@ void SoundInit()
 	PracticeIntro = LoadSoundMem("music/PracticeIntro.wav");
 	PracticeMain = LoadSoundMem("music/PracticeMain.wav");
 	moveSE = LoadSoundMem("SE/カーソル移動7.mp3");
+	decideSE = LoadSoundMem("SE/決定ボタンを押す21.mp3");
 	clickSE = LoadSoundMem("SE/決定ボタンを押す53.mp3");
 	Clap = LoadSoundMem("SE/大勢で拍手.mp3");
 	MissSE = LoadSoundMem("SE/ボヨン.mp3");

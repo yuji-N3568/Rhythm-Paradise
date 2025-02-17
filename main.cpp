@@ -66,7 +66,6 @@ int WINAPI WinMain(_In_ HINSTANCE hinstance, _In_opt_ HINSTANCE hPrevInstance, _
 		if ((CheckSoundMem(clickSE) != 1) && (clickflag != 0)) {
 			clickflag = 0;
 			menu();
-			Utikomi();
 			frame = 0;
 		}
 

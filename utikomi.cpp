@@ -32,7 +32,8 @@ void UtikomiInit()
 	LoadDivGraph("image/Hammers.png", 7, 7, 1, 270, 300, Player);
 	LoadDivGraph("image/nails.png", 4, 4, 1, 133, 125, Object);
 	LoadDivGraph("image/suns.png", 2, 2, 1, 100, 100, Sun);
-	//PlayMovie("image/UtikomiIntro2.mp4", 1, DX_MOVIEPLAYTYPE_BCANCEL);
+	PlayMovie("image/UtikomiIntro2.mp4", 1, DX_MOVIEPLAYTYPE_BCANCEL);
+	FeedOut();
 	ClsDrawScreen();
 } 
 
@@ -247,7 +248,6 @@ int UtikomiGame()
 			if (true) {
 				Playercount = 1;
 				PlaySoundMem(NotHitSE, DX_PLAYTYPE_BACK);
-				printfDx("%d ", frame);
 				while (timing[judgecount] + 250 < frame) {	// “B‚ð’Ê‚è‰ß‚¬‚Ä‚¢‚½Žž
 					judgecount++;
 					hitcount++;

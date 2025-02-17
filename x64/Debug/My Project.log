@@ -1,3 +1,4 @@
-﻿  menu.cpp
+﻿  utikomi.cpp
 C:\DxLib\DxLib.h(3344,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+C:\Users\ynari\source\repos\Rhythm Paradise\utikomi.cpp(366,49): warning C4244: '引数': 'LONGLONG' から 'int' への変換です。データが失われる可能性があります。
   My Project.vcxproj -> C:\Users\ynari\source\repos\Rhythm Paradise\x64\Debug\My Project.exe

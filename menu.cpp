@@ -64,8 +64,13 @@ int menu() {
 	while (1) {
 		DrawExtendGraph(0, 0, 959, 499, MenuScene, false);
 
+		if (CheckSoundMem(MenuBGM) == 0) {
+			PlaySoundMem(MenuBGM, DX_PLAYTYPE_LOOP);
+		}
+
 		if (CheckHitKey(KEY_INPUT_LEFT)) {	// 左に移動
 			if (selected != 0 && holdleftflag) {	// 左端かどうか、長押しかどうか
+				frame = 0;
 				selected--;
 				PlaySoundMem(moveSE, DX_PLAYTYPE_BACK);
 				holdleft++;
@@ -85,6 +90,7 @@ int menu() {
 
 		if (CheckHitKey(KEY_INPUT_RIGHT)) {	// 右に移動
 			if (selected != 49 && holdrightflag) {	// 右端かどうか、長押しかどうか
+				frame = 0;
 				selected++;
 				PlaySoundMem(moveSE, DX_PLAYTYPE_BACK);
 				holdright++;
@@ -117,8 +123,13 @@ int menu() {
 		}
 
 		if (Click()) {
+			StopSoundMem(MenuBGM);
+			PlaySoundMem(decideSE, DX_PLAYTYPE_BACK);
+			FeedOut();
 			result = Utikomi();
-			//fopen()
+			if (result != 0) {
+
+			}
 		}
 
 		if (CheckHitKey(KEY_INPUT_ESCAPE)) {	// ポーズ処理
