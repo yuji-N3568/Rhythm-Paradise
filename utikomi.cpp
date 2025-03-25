@@ -37,7 +37,7 @@ void UtikomiInit()
 	ClsDrawScreen();
 } 
 
-int UtikomiPractice()
+int UtikomiPractice()	// ŠJ”­’†
 {
 	int frame = 0;
 	int ClickCount = 0;
